@@ -2,6 +2,7 @@
 # buildOpenCV.sh
 # Builds and installs OpenCV for the Jetson TK1
 # Accelerates OpenCV by using GPU routines
+# L4T 21.X
 # This version is for CUDA 6.5
 # OpenCV 2.4.10
 # Note: Earlier versions of OpenCV (< 2.4.10) are not compatible with CUDA 6.5
