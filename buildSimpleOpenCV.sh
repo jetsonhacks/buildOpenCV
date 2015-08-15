@@ -1,6 +1,6 @@
 #!/bin/sh
-# buildOpenCV.sh
-# Builds and installs OpenCV for the Jetson TK1
+# buildSimpleOpenCV.sh
+# Builds and installs simple version of OpenCV for the Jetson TK1
 # Accelerates OpenCV by using GPU routines
 # L4T 21.X
 # This version is for CUDA 6.5
@@ -53,6 +53,6 @@ mkdir build
 cd build
 # Jetson architecture is 3.2
 cmake -DWITH_CUDA=ON -DCUDA_ARCH_BIN="3.2" -DCUDA_ARCH_PTX="" -DBUILD_TESTS=OFF -DBUILD_PERF_TESTS=OFF -DENABLE_NEON=ON ..
-# make -j$NUM_THREADS
-# sudo make -j$NUM_THREADS install
+make -j$NUM_THREADS
+sudo make -j$NUM_THREADS install
 /bin/echo -e "\e[1;32mOpenCV simple build installation complete.\e[0m"
