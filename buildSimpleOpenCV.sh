@@ -29,7 +29,7 @@ sudo apt-get -y install \
 
 # Video I/O
 sudo apt-get -y install \
-  libgstreamer1.0-dev libsgstreamer-plugins-base1.0-dev
+  libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev
   libxine-dev libgstreamer0.10-dev libgstreamer-plugins-base0.10-dev 
 
 # For building Python wrappers
